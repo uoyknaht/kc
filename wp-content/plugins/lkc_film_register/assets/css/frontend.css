@@ -1,0 +1,16 @@
+.single-film-table th {
+	width: 30%;
+}
+
+
+
+.film-register-search-form input[type="text"] {
+	width: 200px;
+	padding: 3px 5px;
+
+}
+
+
+.film-register-search-form input[type="text"].input-mini {
+	width: 80px;
+}

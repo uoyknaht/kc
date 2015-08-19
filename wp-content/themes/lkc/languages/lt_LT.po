@@ -1,0 +1,603 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kc7\n"
+"POT-Creation-Date: 2013-01-09 10:35+0200\n"
+"PO-Revision-Date: 2013-01-20 14:14+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.3\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;esc_attr_e\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:38 functions.php:159 functions.php:191
+#: events/not_used/ecp-single-template.php:24
+#: includes/shortcodes/slideshow.php:113 page-templates/parent.php:29
+#: page-templates/poll.php:46 page-templates/polls_archive.php:46
+#: page-templates/subscription.php:33 template-parts/entry-meta.php:26
+msgid "Edit"
+msgstr "Redaguoti"
+
+#: comments.php:17
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:40 comments.php:60
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:41 comments.php:61
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:42 comments.php:62
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: functions.php:48
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:49
+msgid "Secondary Menu"
+msgstr ""
+
+#: functions.php:63
+msgid "Left sidebar"
+msgstr "Kairė panelė"
+
+#: functions.php:71
+msgid "Right sidebar"
+msgstr "Dešinė panelė"
+
+#: functions.php:159
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:195
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:204
+msgid "Reply"
+msgstr ""
+
+#: functions.php:322
+msgid "Post navigation"
+msgstr ""
+
+#: functions.php:323
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: functions.php:324
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: functions.php:567
+msgid "Home Slideshow"
+msgstr "Titulinio skaidrės"
+
+#: functions.php:575
+msgid "No Items found"
+msgstr ""
+
+#: functions.php:576
+msgid "No Items found in Trash"
+msgstr ""
+
+#: functions.php:600
+msgid "Categories"
+msgstr ""
+
+#: functions.php:601 functions.php:685 functions.php:704
+msgid "Category"
+msgstr ""
+
+#: functions.php:607
+msgid "Interesting facts"
+msgstr "Įdomūs faktai"
+
+#: options.php:41 includes/simple-theme-options.php:35
+#: includes/theme-options.php:35
+msgid "One"
+msgstr ""
+
+#: options.php:42 includes/simple-theme-options.php:39
+#: includes/theme-options.php:39
+msgid "Two"
+msgstr ""
+
+#: options.php:43 includes/simple-theme-options.php:43
+#: includes/theme-options.php:43
+msgid "Three"
+msgstr ""
+
+#: options.php:44 includes/simple-theme-options.php:47
+#: includes/theme-options.php:47
+msgid "Four"
+msgstr ""
+
+#: options.php:45 includes/simple-theme-options.php:51
+#: includes/theme-options.php:51
+msgid "Five"
+msgstr ""
+
+#: options.php:50
+msgid "French Toast"
+msgstr ""
+
+#: options.php:51
+msgid "Pancake"
+msgstr ""
+
+#: options.php:52
+msgid "Omelette"
+msgstr ""
+
+#: options.php:53
+msgid "Crepe"
+msgstr ""
+
+#: options.php:54
+msgid "Waffle"
+msgstr ""
+
+#: options.php:123
+msgid "Texts"
+msgstr "Tekstai"
+
+#: options.php:128
+msgid "Contacts information in footer"
+msgstr "Kontaktinė informacija apačioje"
+
+#: options.php:135
+msgid "Contacts information in footer (in english)"
+msgstr "Kontaktinė informacija apačioje (angliškai)"
+
+#: options.php:142
+msgid "Link to Facebook Page in Header"
+msgstr "Nuoroda į Facebook puslapį"
+
+#: options.php:150
+msgid "Email Link in Header"
+msgstr "El. pašto adresas paspaudus ant ikonos svetainės viršuje"
+
+#: options.php:158
+msgid "404 Page Title"
+msgstr "404 puslapio pavadinimas"
+
+#: options.php:166
+msgid "404 Page Content"
+msgstr "404 puslapio tekstas"
+
+#: options.php:173
+msgid "404 Page Title  (in english)"
+msgstr "404 puslapio pavadinimas (angliškai)"
+
+#: options.php:181
+msgid "404 Page Content  (in english)"
+msgstr "404 puslapio tekstas (angliškai)"
+
+#: options.php:191
+msgid "Settings"
+msgstr "Nustatymai"
+
+#: options.php:195
+msgid "Google Analytics Code"
+msgstr "Google Analytics kodas"
+
+#: options.php:218
+msgid "Show edit post link for admins?"
+msgstr "Rodyti įrašų redagavimo nuorodas administratoriams?"
+
+#: options.php:229 options.php:275
+msgid "Home banners"
+msgstr "Baneriai tituliniame"
+
+#: options.php:233 options.php:279
+msgid "Number of home banners"
+msgstr "Banerių skaičius tituliniame puslapyje"
+
+#: options.php:250 options.php:296 options.php:343 options.php:389
+#, php-format
+msgid "Recommended size: %s"
+msgstr "Rekomenduojamas dydis: %s"
+
+#: options.php:255 options.php:301 options.php:348 options.php:394
+msgid "Link"
+msgstr "Nuoroda"
+
+#: options.php:261 options.php:307 options.php:353 options.php:399
+msgid "Open in new window?"
+msgstr "Atidaryti nuorodą naujame lange?"
+
+#: options.php:267 options.php:313 options.php:359 options.php:405
+msgid "Show red border on top?"
+msgstr "Rodyti raudoną juostą viršuje?"
+
+#: options.php:322 options.php:368
+msgid "Right sidebar banners"
+msgstr "Baneriai dešinėje"
+
+#: options.php:326 options.php:372
+msgid "Number of right sidebar banners"
+msgstr "Banerių skaičius dešiniame stulpelyje"
+
+#: search.php:34
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+"Pagal jūsų paieškos kriterijus nieko nerasta. Prašome pabandyti ieškoti su "
+"kitokiais raktažodžiais."
+
+#: events/gridview.php:34 events/not_used/list.php:18
+msgid "Event List"
+msgstr ""
+
+#: events/gridview.php:35 events/not_used/list.php:19
+msgid "Calendar"
+msgstr ""
+
+#: events/gridview.php:40 events/not_used/list.php:169
+msgid "iCal Import"
+msgstr ""
+
+#: events/gridview.php:43
+#, php-format
+msgid "Calendar powered by %sThe Events Calendar%s"
+msgstr ""
+
+#: events/single.php:15
+msgid "This event has passed."
+msgstr ""
+
+#: events/single.php:29 events/not_used/list.php:53
+msgid "Start:"
+msgstr ""
+
+#: events/single.php:31 events/not_used/list.php:57
+msgid "End:"
+msgstr ""
+
+#: events/single.php:34
+msgid "Date"
+msgstr "Data"
+
+#: events/single.php:38 events/not_used/list.php:105
+msgid "Cost:"
+msgstr ""
+
+#: events/single.php:43 events/single.php:46
+msgid "Organizer:"
+msgstr ""
+
+#: events/single.php:50 events/single.php:72 events/not_used/list.php:87
+msgid "Phone:"
+msgstr ""
+
+#: events/single.php:54
+msgid "Email:"
+msgstr ""
+
+#: events/single.php:60 events/not_used/list.php:72
+msgid "Venue:"
+msgstr ""
+
+#: events/single.php:77 events/not_used/list.php:93
+msgid "Address:"
+msgstr ""
+
+#: events/single.php:83
+msgid "Click to view a Google Map"
+msgstr ""
+
+#: events/single.php:83 events/not_used/list.php:95
+msgid "Google Map"
+msgstr ""
+
+#: events/not_used/list.php:62
+msgid "Date:"
+msgstr "Data:"
+
+#: events/not_used/list.php:120
+#, php-format
+msgid ""
+" listed under %s. Check out past events for this category or view the full "
+"calendar."
+msgstr ""
+
+#: events/not_used/list.php:122
+#, php-format
+msgid ""
+" listed under %s. Check out upcoming events for this category or view the "
+"full calendar."
+msgstr ""
+
+#: events/not_used/list.php:127
+#, php-format
+msgid "No events scheduled for <strong>%s</strong>. Please try another day."
+msgstr ""
+
+#: events/not_used/list.php:131
+msgid "No upcoming events"
+msgstr ""
+
+#: events/not_used/list.php:135
+msgid "No previous events"
+msgstr ""
+
+#: events/not_used/list.php:148 events/not_used/list.php:150
+#: events/not_used/list.php:152
+msgid "&laquo; Previous Events"
+msgstr ""
+
+#: events/not_used/list.php:159 events/not_used/list.php:161
+#: events/not_used/list.php:163
+msgid "Next Events &raquo;"
+msgstr ""
+
+#: events/not_used/table-mini.php:117
+msgid "View all &raquo;"
+msgstr ""
+
+#: includes/not_used_functions.php:38
+msgid "Read more"
+msgstr "Skaityti daugiau"
+
+#: includes/not_used_functions.php:172
+#, fuzzy, php-format
+msgid "Page %s"
+msgstr "Puslapiai:"
+
+#: includes/simple-theme-options.php:22 includes/theme-options.php:22
+msgid "Theme Options"
+msgstr "Išvaizdos nustatymai"
+
+#: includes/simple-theme-options.php:31 includes/theme-options.php:31
+msgid "Zero"
+msgstr ""
+
+#: includes/simple-theme-options.php:58 includes/theme-options.php:58
+msgid "Yes"
+msgstr ""
+
+#: includes/simple-theme-options.php:62 includes/theme-options.php:62
+msgid "No"
+msgstr ""
+
+#: includes/simple-theme-options.php:66 includes/theme-options.php:66
+msgid "Maybe"
+msgstr ""
+
+#: includes/simple-theme-options.php:81 includes/theme-options.php:81
+msgid " Theme Options"
+msgstr ""
+
+#: includes/simple-theme-options.php:84 includes/theme-options.php:84
+msgid "Options saved"
+msgstr ""
+
+#: includes/simple-theme-options.php:98 includes/theme-options.php:98
+msgid "A checkbox"
+msgstr ""
+
+#: includes/simple-theme-options.php:101 includes/theme-options.php:101
+msgid "Sample checkbox"
+msgstr ""
+
+#: includes/simple-theme-options.php:110 includes/theme-options.php:110
+msgid "Some text"
+msgstr ""
+
+#: includes/simple-theme-options.php:113 includes/theme-options.php:113
+msgid "Sample text input"
+msgstr ""
+
+#: includes/simple-theme-options.php:122 includes/theme-options.php:122
+msgid "Select input"
+msgstr ""
+
+#: includes/simple-theme-options.php:140 includes/theme-options.php:140
+msgid "Sample select input"
+msgstr ""
+
+#: includes/simple-theme-options.php:149 includes/simple-theme-options.php:151
+#: includes/theme-options.php:149 includes/theme-options.php:151
+msgid "Radio buttons"
+msgstr ""
+
+#: includes/simple-theme-options.php:179 includes/theme-options.php:179
+msgid "A textbox"
+msgstr ""
+
+#: includes/simple-theme-options.php:182 includes/theme-options.php:182
+msgid "Sample text box"
+msgstr ""
+
+#: includes/simple-theme-options.php:188 includes/theme-options.php:188
+msgid "Save Options"
+msgstr ""
+
+#: includes/metaboxes/kcsite-home-slideshow-meta.php:3
+#: includes/metaboxes/kcsite-home-slideshow-spec.php:4
+msgid "Slideshow Link"
+msgstr ""
+
+#: includes/metaboxes/kcsite-home-slideshow-meta.php:11
+#, fuzzy
+msgid "Open in New Window"
+msgstr "Atidaryti nuorodą naujame lange?"
+
+#: includes/metaboxes/kcsite-post-meta.php:4
+msgid "Post Subtitle:"
+msgstr "Antraštė"
+
+#: includes/metaboxes/kcsite-post-meta.php:7
+msgid "Shown below post title"
+msgstr "Rodoma žemiau pavadinimo"
+
+#: includes/metaboxes/kcsite-post-meta.php:13
+msgid "Hide featured image in news list"
+msgstr "Nerodyti specialiojo paveikslėlio įrašų sąrašo puslapyje"
+
+#: includes/metaboxes/kcsite-post-meta.php:20
+msgid "Hide featured image in single view"
+msgstr "Nerodyti specialiojo paveikslėlio įrašo peržiūros puslapyje"
+
+#: includes/metaboxes/kcsite-post-meta.php:27
+msgid "Show not cropped image in single view"
+msgstr "Rodyti neapkirptą variantą"
+
+#: includes/metaboxes/kcsite-post-meta.php:29
+msgid ""
+"If cropped image does not look good, you can show the original proportions "
+"image"
+msgstr ""
+"Jei apkirptas paveikslėlis atrodo netinkamai, galite rodyti originalių "
+"proporcijų paveikslėlį (tai veikia tik peržiūros puslapyje)"
+
+#: includes/metaboxes/kcsite-post-meta.php:37
+msgid "Show in Home Page"
+msgstr "Rodyti tituliniame puslapyje"
+
+#: includes/metaboxes/kcsite-post-meta.php:38
+msgid "If you select more than one post, the newest will be shown"
+msgstr "Jei pažymėsite daugiau nei vieną įrašą, bus rodomas naujausias iš jų"
+
+#: includes/metaboxes/kcsite-post-meta.php:45
+msgid "Excerpt Length in Words (optional)"
+msgstr "Žodžių skaičius ištraukoje (neprivaloma)"
+
+#: includes/shortcodes/not_used/portfolio.php:73
+msgid ""
+"<span class=\"button\"><span class=\"meta-nav\">&larr;</span> Prev</span>"
+msgstr ""
+
+#: includes/shortcodes/not_used/portfolio.php:74
+msgid ""
+"<span class=\"button\">Next <span class=\"meta-nav\">&rarr;</span></span>"
+msgstr ""
+
+#: includes/shortcodes/not_used/recent-posts.php:36
+msgid "No Comments"
+msgstr ""
+
+#: includes/shortcodes/not_used/recent-posts.php:39
+msgid " Comments"
+msgstr ""
+
+#: includes/shortcodes/not_used/recent-posts.php:46
+msgid "Comments off"
+msgstr ""
+
+#: template-parts/entry-meta.php:5 template-parts/entry-meta.php:15
+msgid ", "
+msgstr ""
+
+#: template-parts/entry-meta.php:8
+#, php-format
+msgid "<span class=\"%1$s\">Categories:</span> %2$s"
+msgstr "<span class=\"%1$s\">Kategorija:</span> %2$s"
+
+#: template-parts/entry-meta.php:18
+#, php-format
+msgid "<span class=\"%1$s\">Tagged:</span> %2$s"
+msgstr "<span class=\"%1$s\">Žymos:</span> %2$s"
+
+#~ msgid "Show categories titles on single new page?"
+#~ msgstr "Rodyti priskirtų kategorijų sąrašą naujienos peržiūroje?"
+
+#~ msgid "Show tags titles on single new page?"
+#~ msgstr "Rodyti priskirtų žymų sąrašą naujienos peržiūroje?"
+
+#~ msgid "On what languages to show?"
+#~ msgstr "Kuriose kalbose rodyti?"
+
+#~ msgid "Side Banners"
+#~ msgstr "Šoniniai baneriai"
+
+#, fuzzy
+#~ msgid "Number of banners"
+#~ msgstr "Banerių skaičius tituliniame puslapyje"
+
+#~ msgid "Numeric values only"
+#~ msgstr "galioja tik skaitinės reikšmės"
+
+#~ msgid "Upload images for banners."
+#~ msgstr ""
+#~ "Įkelkite nuotraukas baneriams. Rekomenduojamas plotis: 150px. Maksimalus "
+#~ "plotis: 200px."
+
+#~ msgid "Banner link"
+#~ msgstr "Banerio nuoroda (kur nuves ant jo paspaudus)"
+
+#~ msgid "Advanced Settings"
+#~ msgstr "Sudėtingesni nustatymai"
+
+#, fuzzy
+#~ msgid "Textarea"
+#~ msgstr "Tekstai"
+
+#~ msgid "Read more <span class=\"meta-nav\">&raquo;</span>"
+#~ msgstr "Skaityti daugiau <span class=\"meta-nav\">&raquo;</span>"
+
+#~ msgid "Left Sidebar before banners"
+#~ msgstr "Kairė panelė prieš banerius"
+
+#~ msgid "Nothing Found"
+#~ msgstr "Nieko nerasta"
+
+#~ msgid ""
+#~ "Apologies, but no results were found for the requested archive. Perhaps "
+#~ "searching will help find a related post."
+#~ msgstr "Informacijos archyve šiuo metu nėra."
+
+#~ msgid "Top Banner Slideshow"
+#~ msgstr "Viršutinis baneris"
+
+#~ msgid "Slideshow timeout, ms"
+#~ msgstr "Laikas tarp besikeičiančių skaidrių, ms"
+
+#~ msgid "Slideshow transition speed, ms"
+#~ msgstr "Skaidrės pasikeitimo greitis, ms"
+
+#~ msgid "Number of Slideshow images"
+#~ msgstr "Viršutinio banerio skaidrių skaičius"
+
+#~ msgid "Upload photo for header slideshow. Recommended size: 500x100px."
+#~ msgstr ""
+#~ "Įkelkite nuotraukas banerio skaidrėms. Rekomenduojamas dydis: 940x150px."
+
+#~ msgid "Search Results for: %s"
+#~ msgstr "Paieškos rezultatai raktažodžiams: %s"
+
+#~ msgid "Search Results: Nothing Found"
+#~ msgstr "Paieškos rezultatai: nieko nerasta"
+
+#~ msgid "You can override shown date here:"
+#~ msgstr "Čia galite perrašyti rodomą datą"
+
+#~ msgid "Useful if you want to keep the posts order, but change shown date"
+#~ msgstr ""
+#~ "Naudinga, jei norite perrikiuoti įrašų tvarką, tačiau išlaikyti tą pačią "
+#~ "datą"
+
+#, fuzzy
+#~ msgid "Additional Post Settings"
+#~ msgstr "Papildomi įrašo nustatymai"
+
+#~ msgid "This page does not exist"
+#~ msgstr "Toks puslapis neegzistuoja"
+
+#, fuzzy
+#~ msgid "Advanced"
+#~ msgstr "Sudėtingesni nustatymai"
+
+#~ msgid "search_form_placeholder"
+#~ msgstr "ieškoti svetainėje..."

@@ -1,0 +1,43 @@
+/* hidding attachment post url button */
+/*#media-items button.urlpost {
+	display: none;
+}*/
+
+
+#aiosp a[href*="semperplugins"],
+.wp-submenu a[href*="edit-tags.php?taxonomy=category"],
+.wp-submenu a[href*="edit-tags.php?taxonomy=post_tag"],
+.wp-submenu a[href*="edit-tags.php?taxonomy=new-type"],
+.wp-submenu a[href*="options-general.php?page=tinymce-advanced"],
+.wp-submenu a[href*="options-general.php?page=all-in-one-seo-pack/aioseop.class.php"],
+.wp-submenu a[href*="options-general.php?page=easy-columns.php"],
+.wp-submenu a[href*="admin.php?page=wp-polls/polls-options.php"],
+.wp-submenu a[href*="admin.php?page=wp-polls/polls-templates.php"],
+.wp-submenu a[href*="admin.php?page=wp-polls/polls-uninstall.php"],
+.wp-submenu a[href*="edit-tags.php?taxonomy=home-slideshow-category&post_type=home-slideshow"],
+.wp-submenu a[href*="edit.php?post_type=tribe_events&page=tribe-app-shop"],
+.wp-submenu a[href*="http://localhost/lkc/wp-admin/edit.php?post_type=tribe_events&page=tribe-events-calendar&tab=help"],
+.wp-submenu a[href*="edit.php?post_type=tribe_events&page=tribe-events-calendar"],
+.wp-submenu a[href*="edit-tags.php?taxonomy=tribe_events_cat&post_type=tribe_events"],
+.wp-submenu a[href*="edit.php?post_type=tribe_events&page=tribe-events-calendar&tab=help"],
+
+/* quiz */
+.wp-submenu a[href="admin.php?page=wpsqt-menu"],
+.wp-submenu a[href*="admin.php?page=wpsqt-menu&type=survey"],
+.wp-submenu a[href*="admin.php?page=wpsqt-menu&type=poll"],
+.wp-submenu a[href*="admin.php?page=wpsqt-menu-options"],
+.wp-submenu a[href*="admin.php?page=wpsqt-menu-maintenance"],
+.wp-submenu a[href*="admin.php?page=wpsqt-menu-help"],
+
+.wp-submenu a[href*="options-general.php?page=smart-archives"] {display: none !important;}
+
+/*#toplevel_page_wpsqt-menu {display: none;}*/
+
+
+/* event calendar, hide commercial messages */
+#eventDetails .eventBritePluginPlug,
+.add-new-h2.view-calendar-link {display: none}
+
+/* hide option to select registered users in newsletter - leave only usual subscribers */
+.easymail-edit-recipients-registered {display: none;}
+strong[class*="easymail-column-status-required-list"] {display: none !important;}

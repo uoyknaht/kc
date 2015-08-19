@@ -1,0 +1,261 @@
+
+
+
+
+
+
+
+---------------------------------------------------------------
+- used template files:
+	- index.php (home)
+	- content.php (home, kategorijos blogo puslapis, zymos blogo puslapis, search)
+	- content-single.php (single post)
+	- search.php
+
+- image sizes:
+	- original: max 1000px wide, max 600px height
+	- large: max 500px wide, unlimited height (useful for blog page image without popup)
+	- medium: max 250px wide, unlimited height
+	- thumbnail: 150x120px
+
+
+- admin metaboxes generated with WPAlchemy class
+- to build admin option was used "Options Framewrok" plugin
+- to restrict huge upload, "Imsanity" plugin was used
+- culture center employees are given 'editor' role accounts to put content
+
+
+----
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>Lietuvos Kino Centras</title>
+<script src="jquery-1.8.3.min.js"></script>
+<script>
+$(document).ready(function(){
+	var iWidth = $(window).width(),
+		iHeight = $(window).height(),
+		iLeft = 0,
+		iTop = 0;
+		
+		iLeft = 1270*iWidth/1920;
+		iTop = 270 * iHeight/1080;
+		
+		
+		if(iWidth<iHeight)
+		{
+			iLeft = 1270*iWidth/1920;
+			iTop = 270 * iHeight/1080;
+		}else{
+			iLeft = 1270*iWidth/1920;
+			iTop = 270 * iHeight/1080;
+		}
+	
+	
+		$("ul").css("margin-left", iLeft);
+		$("ul").css("margin-top", iTop);
+	$("ul li").css("font-size", (18*iWidth/1920));
+	
+		$(window).resize(function(){
+			iWidth = $(window).width()
+			iHeight = $(window).height();
+			
+			iLeft = 1270*iWidth/1920;
+			iTop = 270*iHeight/1080;
+			$("ul").css("margin-left", iLeft);
+			$("ul").css("margin-top", iTop);
+			$("ul li").css("font-size", (18*iWidth/1920));
+		});
+		
+		
+		
+		
+		
+});
+</script>
+<style type="text/css">
+
+<?php
+$l = "";
+	if(isset($_GET["l"]) && $_GET["l"]=="en")
+	{	
+		$l = "_en";
+	}
+?>
+
+@font-face {
+    font-family: Trebuchet;
+    src: url("images/TrebuchetMS.eot") /* EOT file for IE */
+}
+@font-face {
+    font-family: Trebuchet;
+    src: url("images/TrebuchetMS.ttf") /* TTF file for CSS3 browsers */
+}
+
+
+html {
+	background: url(images/lkc<?php echo $l;?>.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: auto 100%;
+	background-repeat:no-repeat;
+	background-color:#000000;
+}
+
+ul {
+	margin:0; padding:0;
+	position:absolute;
+}
+
+ul li{
+	margin:0;
+	padding:0;
+	list-style:none;
+	float:left;
+	color: #fffdfe;
+	font-family:Trebuchet;
+}
+
+ul li a{
+	text-decoration:none;
+	
+	color:#909092;
+}
+
+.clicked{
+	color: #fffdfe;	
+}
+
+</style>
+</head>
+<body>
+	<ul>
+		<li><a href="?l=lt" <?php if($l!=""){ echo 'class="clicked"';}?> title="">LT</a></li>
+		<li>/</li>
+		<li><a href="?l=en" <?php if($l==""){ echo 'class="clicked"';}?> title="">EN</a></li>
+	</ul>
+</body>
+</html>
+
+
+
+
+---
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>Lietuvos Kino Centras</title>
+<script src="jquery-1.8.3.min.js"></script>
+<script>
+$(document).ready(function(){
+	var iWidth = $(window).width(),
+		iHeight = $(window).height(),
+		iLeft = 0,
+		iTop = 0;
+		
+		iLeft = 1270*iWidth/1920;
+		iTop = 270 * iHeight/1080;
+		
+		
+		if(iWidth<iHeight)
+		{
+			iLeft = 1270*iWidth/1920;
+			iTop = 270 * iHeight/1080;
+		}else{
+			iLeft = 1270*iWidth/1920;
+			iTop = 270 * iHeight/1080;
+		}
+	
+	
+		$("ul").css("margin-left", iLeft);
+		$("ul").css("margin-top", iTop);
+	$("ul li").css("font-size", (18*iWidth/1920));
+	
+		$(window).resize(function(){
+			iWidth = $(window).width()
+			iHeight = $(window).height();
+			
+			iLeft = 1270*iWidth/1920;
+			iTop = 270*iHeight/1080;
+			$("ul").css("margin-left", iLeft);
+			$("ul").css("margin-top", iTop);
+			$("ul li").css("font-size", (18*iWidth/1920));
+		});
+		
+		
+		
+		
+		
+});
+</script>
+<style type="text/css">
+
+<?php
+$l = "";
+	if(isset($_GET["l"]) && $_GET["l"]=="en")
+	{	
+		$l = "_en";
+	}
+?>
+
+@font-face {
+    font-family: Trebuchet;
+    src: url("images/TrebuchetMS.eot") /* EOT file for IE */
+}
+@font-face {
+    font-family: Trebuchet;
+    src: url("images/TrebuchetMS.ttf") /* TTF file for CSS3 browsers */
+}
+
+
+html {
+	background: url(images/lkc<?php echo $l;?>.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: auto 100%;
+	background-repeat:no-repeat;
+	background-color:#000000;
+}
+
+ul {
+	margin:0; padding:0;
+	position:absolute;
+}
+
+ul li{
+	margin:0;
+	padding:0;
+	list-style:none;
+	float:left;
+	color: #fffdfe;
+	font-family:Trebuchet;
+}
+
+ul li a{
+	text-decoration:none;
+	
+	color:#909092;
+}
+
+.clicked{
+	color: #fffdfe;	
+}
+
+</style>
+</head>
+<body>
+	<ul>
+		<li><a href="?l=lt" <?php if($l!=""){ echo 'class="clicked"';}?> title="">LT</a></li>
+		<li>/</li>
+		<li><a href="?l=en" <?php if($l==""){ echo 'class="clicked"';}?> title="">EN</a></li>
+	</ul>
+
+	
+</body>
+</html>

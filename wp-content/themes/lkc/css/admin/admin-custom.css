@@ -1,0 +1,138 @@
+/*a.add_media  {
+	padding: 3px 30px 3px 0;
+	background: url('../../images/admin/image_icon.png') right 0 no-repeat;
+}
+a.add_media img  {
+	display: none;
+}*/
+.metabox-explanation {
+    font-size: 11px;
+    font-style: italic;
+}
+p + .metabox-explanation {
+    margin-top: -10px;
+}
+.kcsite-meta-control table td {
+	vertical-align: top;
+	padding-right: 15px;	
+}
+/*.kcsite-meta-control.post-type-page .kcsite-posts-metabox-show-in-home-page {display: none;}*/
+
+/* make nicer options framework interface */
+
+#optionsframework .group .section .heading {
+	border: 0 none;
+	margin-bottom: 0;
+}
+
+/*#optionsframework .group .section {padding-bottom: 20px;border-bottom: 1px solid #DFDFDF;}*/
+
+#optionsframework .group .section.section-info .heading {
+	/*border-bottom: 1px solid #DFDFDF;*/
+}
+#optionsframework #section-kcsite_ga_code {
+	margin-bottom: 20px !important;
+}
+
+#optionsframework .reset-button {
+  display: none;
+}
+
+/* login page */
+#login {padding-top: 50px !important;}
+body.login h1 a { background-image: url(../../img/admin/lkc-logo.png) !important; background-size: auto !important; height: 155px !important; }
+
+
+/* hack: don't know why it appears on language column in wp-list-table */
+.wp-list-table .language_lt .cpt-category-column-content,
+.wp-list-table .language_en .cpt-category-column-content {
+	display: none;
+}
+
+hr { background-color: #cccccc; border: 0 none; height: 1px; margin: 20px 0; clear: both;}
+hr.admin-section-hr {margin: 10px -10px 0 -10px; }
+
+/* ovverride events calendar plugin hack */
+.events-cal .tablenav #EventStartDate-filter, .events-cal #post-query-submit {display: inline-block !important;}
+
+
+.alert {
+  position: relative;
+  padding: 10px 35px 10px 14px;
+  margin: 10px 0 10px 0;
+  line-height: 130%;
+  color: #3a87ad;
+  background-color: #d9edf7;
+  border: 1px solid #bce8f1;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.alert-success {
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;	
+}
+.alert-error {
+	color: #b94a48;
+	background-color: #f2dede;
+	border-color: #eed3d7;
+}
+
+
+.alert-close {
+  position: absolute;
+  color: #999999;
+  font-weight: bold;
+  top: 9px;
+  right: 12px;
+  cursor: pointer;
+}
+.alert-close:hover {
+  color: #333333;
+  text-decoration: none;
+}
+
+.alert-single {
+  margin-top: 30px;
+}
+
+
+
+.form-table .error input {
+  border: 1px solid #ff0000;
+}
+
+label.error {color: #ff0000;}
+
+
+.kcsite-textarea {
+  width: 99%;
+  overflow: auto;
+  min-height: 200px;
+  resize: vertical;
+}
+
+/* somewhy letters in multiple input are very small */
+.chzn-container-multi .chzn-choices .search-field input {
+	height: auto;
+}
+
+/* lithuanian films settings page */
+
+.lithfilm-settings-wrap h3 {
+    font-size: 14px;
+    margin: 15px 0 0 0;
+}
+
+.lithfilm-settings-wrap .form-table th,
+.lithfilm-settings-wrap .form-table td {
+    margin-bottom: 9px;
+    padding: 3px 10px;
+}
+
+
+
+

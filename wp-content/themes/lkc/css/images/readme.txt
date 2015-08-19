@@ -1,0 +1,1 @@
+Images of colorbox and jquery ui are placed here because they both are stupid and link their images to 'images' folder
