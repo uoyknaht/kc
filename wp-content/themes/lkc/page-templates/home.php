@@ -71,7 +71,41 @@ get_header(); ?>
 
 	<div class="area-to-animate-home-bubles"></div>
 
+	<?php
 
+	global $post;
+	//$args = array('numberposts' => 2, 'post_type' => array('bubble'), 'orderby' => 'menu_order', 'order' => 'ASC', 'lang' => pll_current_language('slug'));
+	$args = array('numberposts' => 2, 'post_type' => array('bubble'), 'orderby' => 'menu_order', 'order' => 'ASC', 'lang' => pll_current_language('slug'));
+	$bubbles = get_posts($args);
+	
+	if(isset($bubbles[0]) || isset($bubbles[1])) {
+	?>
+	<div class="home-bubles-wrap">
+
+		<?php if(isset($bubbles[1])){ ?>
+		<div class="buble buble-grey home-buble-2">
+			<div class="buble-inner">
+				<h2 class="buble-title"><?php echo $bubbles[1]->post_title; ?></h2>
+				<div class="buble-content">
+					<?php echo $bubbles[1]->post_content; ?>
+				</div>
+			</div>		
+		</div>	
+		<?php } ?>
+
+		<?php if(isset($bubbles[0])){ ?>
+		<div class="buble buble-red home-buble-1">
+			<div class="buble-inner">
+				<h2 class="buble-title"><?php echo $bubbles[0]->post_title; ?></h2>
+				<div class="buble-content">
+					<?php echo $bubbles[0]->post_content; ?>
+				</div>
+			</div>		
+		</div>
+		<?php } ?>
+
+	</div><!-- .home-bubles-wrap -->
+	<?php } ?>
 	
 </div><!-- .home-cycles-wrap -->
 </div>
