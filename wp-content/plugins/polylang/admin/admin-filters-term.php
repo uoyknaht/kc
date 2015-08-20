@@ -558,17 +558,25 @@ class PLL_Admin_Filters_Term {
 		if (isset($screen) && in_array($screen->base, array('toplevel_page_mlang', 'dashboard')))
 			return false;
 
-		// admin language filter for ajax paginate_links in taxonomies metabox in nav menus panel
-		if (!empty($_POST['action']) && !empty($this->curlang) && 'menu-get-metabox' == $_POST['action'])
-			return $this->curlang;
+		// ajax actions
+		if (isset($_POST['action'])) {
+			// admin language filter for:
+			// ajax paginate_links in taxonomies metabox in nav menus panel
+			// and taxonomies menus items in customizer menus (since WP 4.3)
+			if (!empty($this->curlang) && in_array($_POST['action'], array('menu-get-metabox', 'load-available-menu-items-customizer'))) {
+				return $this->curlang;
+			}
 
-		// The only ajax response I want to deal with is when changing the language in post metabox
-		if (isset($_POST['action']) && !in_array($_POST['action'], array('post_lang_choice', 'term_lang_choice', 'get-tagcloud')))
-			return false;
+			// The only ajax response I want to deal with is when changing the language in post metabox
+			if (!in_array($_POST['action'], array('post_lang_choice', 'term_lang_choice', 'get-tagcloud'))) {
+				return false;
+			}
 
-		// I only want to filter the parent dropdown list when editing a term in a hierarchical taxonomy
-		if (isset($_POST['action']) && $_POST['action'] == 'term_lang_choice' && !(isset($args['class']) || isset($args['unit'])))
-			return false;
+			// I only want to filter the parent dropdown list when editing a term in a hierarchical taxonomy
+			if ('term_lang_choice' == $_POST['action'] && !(isset($args['class']) || isset($args['unit']))) {
+				return false;
+			}
+		}
 
 		// ajax response for changing the language in the post metabox (or in the edit-tags panels)
 		if (isset($_POST['lang']))
@@ -664,9 +672,11 @@ class PLL_Admin_Filters_Term {
 				return $this->model->get_term($value, $this->model->get_term_language($traces[4]['args'][0]));
 		}
 
-		elseif (false != strpos($traces[3]['file'], 'wp-admin/edit-tags.php')) {
+		// filters the default category in note below the category list table and in settings->writing dropdown
+		elseif (false != stripos($traces[3]['file'], 'edit-tags.php') || false != stripos($traces[3]['file'], 'options-writing.php')) {
 			return $this->model->get_term($value,  $this->pref_lang);
 		}
+
 		return $value;
 	}
 
@@ -706,6 +716,9 @@ class PLL_Admin_Filters_Term {
 	 * @param string $taxonomy
 	 */
 	public function split_shared_term($term_id, $new_term_id, $term_taxonomy_id, $taxonomy) {
+		if (!$this->model->is_translated_taxonomy($taxonomy))
+			return;
+
 		// avoid recursion
 		static $avoid_recursion = false;
 		if ($avoid_recursion)
