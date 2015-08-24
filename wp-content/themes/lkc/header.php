@@ -16,7 +16,7 @@
 		<meta charset="<?php bloginfo('charset'); ?>" />
 		<title><?php wp_title( '-', true, 'right' ); ?></title>
 		<link rel="shortcut icon" href="<?php echo get_bloginfo('stylesheet_directory');?>/images/favicon.ico" />
-		<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/app.css?20" />
+		<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/app.css?21" />
 		<!--[if lte IE 6]><link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/lte-ie6.css" /><![endif]-->	
 		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->	
 		<?php wp_head(); ?>
@@ -24,7 +24,17 @@
 		<?php if(of_get_option('kcsite_ga_code')) get_template_part('template-parts/ga_code');		 ?>
 
 	</head>	
-	<body <?php body_class(); ?>>					
+
+	<?php 
+	$hasLeftMenuClass = '';
+	$leftMenu = getLeftMenu();
+
+	if ($leftMenu != '') {
+		$hasLeftMenuClass = 'has-left-menu';
+	}
+	?>
+
+	<body <?php body_class($hasLeftMenuClass); ?>>					
 
 
 			<div id="header">
@@ -73,7 +83,15 @@
 
 					<div class="col-wrap clearfix">
 
-						<?php get_template_part('template-parts/col-left');?>
+						<?php 
+
+						if ($leftMenu != '') { ?>
+							<div class="col-left">
+								<?php echo $leftMenu; ?>
+							</div>
+						<?php }
+
+						?>
 
 						<div class="col-right clearfix">
 

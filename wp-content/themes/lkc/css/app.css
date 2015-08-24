@@ -812,7 +812,7 @@ body.lang-en #logo {background: url('../img/lkc-logo-en.png') 0 0 no-repeat; hei
 }
 #footer > .wrap {margin-top: 16px;}
 
-.footer-wrap-inner {margin-left: 144px;}
+body.has-left-menu .footer-wrap-inner {margin-left: 144px;}
 body.home .footer-wrap-inner {margin-left: 72px;}
 body.home .footer-wrap-inner {margin-right: 72px;}
 
@@ -832,9 +832,13 @@ body.home .footer-wrap-inner {margin-right: 72px;}
 }
 
 .breadcrumb {
-	margin-left: 144px;
 	font-size: 12px;
 }
+
+body.has-left-menu .breadcrumb {
+    margin-left: 144px;
+}
+
 .breadcrumb,
 .breadcrumb a {
 	color: #ffffff;
@@ -842,21 +846,34 @@ body.home .footer-wrap-inner {margin-right: 72px;}
 
 .col-left {
 	float: left;
-	width: 140px;
+	width: 0;
+}
+
+body.has-left-menu .col-left {
+    width: 140px;
 }
 
 .col-right {
 	float: right;
-	width: 792px;
+	width: 936px;
 	background: #ffffff;
 	min-height: 100px;
 
 	padding: 20px 20px;
 }
 
+body.has-left-menu .col-right {
+    width: 792px;
+}
+
 .contentbar {
 	float: left;
-	width: 520px;
+    width: 664px;
+	
+}
+
+body.has-left-menu .contentbar {
+    width: 520px;
 }
 
 .sidebar-right {
