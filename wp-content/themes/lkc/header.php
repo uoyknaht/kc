@@ -16,7 +16,7 @@
 		<meta charset="<?php bloginfo('charset'); ?>" />
 		<title><?php wp_title( '-', true, 'right' ); ?></title>
 		<link rel="shortcut icon" href="<?php echo get_bloginfo('stylesheet_directory');?>/images/favicon.ico" />
-		<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/app.css?19" />
+		<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/app.css?20" />
 		<!--[if lte IE 6]><link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/lte-ie6.css" /><![endif]-->	
 		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->	
 		<?php wp_head(); ?>
